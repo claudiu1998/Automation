@@ -22,6 +22,7 @@ public class ParserDOMdemo {
                 Node nNode = nList.item(temp);
                 System.out.println("\nCurrent Element :" + nNode.getNodeName());
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
                     Element eElement = (Element) nNode;
                     System.out.println("Department Name : "
                             + eElement.getAttribute("name"));
@@ -31,10 +32,14 @@ public class ParserDOMdemo {
 
                 }
 
+
+
                 nList = doc.getElementsByTagName("employee");
                 for ( temp = 0; temp < nList.getLength(); temp++) {
                     nNode = nList.item(temp);
                     if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+
                         Element eElement = (Element) nNode;
                         System.out.println("Employee ID : "
                                 + eElement.getAttribute("empId"));
@@ -59,13 +64,35 @@ public class ParserDOMdemo {
                                 .getElementsByTagName("position")
                                 .item(0)
                                 .getTextContent());
+                        NodeList skillsNodeList = eElement.getElementsByTagName("skills").item(0).getChildNodes();
+                        for(int i=0;i<skillsNodeList.getLength();i++){
+                            Node currentNode = skillsNodeList.item(i);
+
+                            if (currentNode.getNodeType() == Node.ELEMENT_NODE) {
+
+                                Element currentElement = (Element) currentNode;
+                                System.out.println("Skill: "
+                                        + currentElement
+                                        .getTextContent());
+                            }
+
                     }
+                        System.out.println("Manager ID : "
+                                + eElement
+                                .getElementsByTagName("managerId")
+                                .item(0)
+                                .getTextContent());
+                    }
+
                 }
+
+
+
             }
             }
             catch(Exception e){
                 e.printStackTrace();
-            }
+                }
 
     }
 
