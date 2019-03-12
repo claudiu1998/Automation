@@ -1,0 +1,51 @@
+<company>
+    <department name="Development" depId="1">
+        <employee empId="001">
+            <lastName>Eminiscu</lastName>
+            <firstName>Mihai</firstName>
+            <birthDate>10.01.1998</birthDate>
+            <position>Department Manager</position>
+            <skills>
+                <skill>Communication</skill>
+                <skill>Java</skill>
+            </skills>
+            <managerId>002</managerId>
+        </employee>
+        <employee empId="002">
+            <lastName>Creanga</lastName>
+            <firstName>Ion</firstName>
+            <birthDate>12.12.1988</birthDate>
+            <position>Developer</position>
+            <skills>
+                <skill>Sleeps only 2 hours per day</skill>
+                <skill>Overtimes without concerns</skill>
+                <skill>Works for food</skill>
+            </skills>
+            <managerId>003</managerId>
+        </employee>
+    </department>
+    <department name="Accounting" depId="2">
+        <employee empId="003">
+            <lastName>Bacovia</lastName>
+            <firstName>George</firstName>
+            <birthDate>01.01.1999</birthDate>
+            <position>Chief</position>
+            <skills>
+                <skill>Super Calculator</skill>
+                <skill>1C</skill>
+            </skills>
+            <managerId>004</managerId>
+        </employee>
+        <employee empId="004">
+            <lastName>Tutu</lastName>
+            <firstName>Costea</firstName>
+            <birthDate>01.01.1989</birthDate>
+            <position>Servitoare</position>
+            <skills>
+                <skill>Spala Podele</skill>
+                <skill>Sfabra</skill>
+            </skills>
+            <managerId>0</managerId>
+        </employee>
+    </department>
+</company>
